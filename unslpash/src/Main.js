@@ -32,7 +32,6 @@ const Main = () => {
   };
 
   useEffect(() => {
-    console.log("hi");
     getData();
   }, []);
 
