@@ -15,17 +15,17 @@ const OnePost = ({ style, value, increment }) => {
     clipPath: "polygon(0% 0%, 50% 0, 100% 40%, 100% 100%, 50% 100%, 0 60%)",
   };
 
+
+
   return (
     <Jumbotron fluid style={imgStyle}>
-      <Container className="justify-content-md-center">
-        <Row xs={2} md={3}>
-          <Col></Col>
-          <Col></Col>
-          <Col xs={6} md={4}>
-            <h1>Fluid jumbotron{increment}</h1>
-            <p>{value.alt_description}</p>
-          </Col>
-        </Row>
+      <Container className="justify-content-md-center" style={{ minWidth: "100vh", minHeight: "100vh", position: "relative" }}>
+        <div style={{ position: "absolute", bottom: "50%", left: "0", background: "rgba(237, 233, 232, 0.695)", padding: "20px" }}>
+          <div style={{ width: "400px" }}>
+            <h2>{value.alt_description}</h2>
+
+          </div>
+        </div>
       </Container>
     </Jumbotron>
   );
